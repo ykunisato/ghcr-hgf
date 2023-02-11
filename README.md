@@ -23,3 +23,19 @@ The following Julia packages are installed in this image.
 - StatsPlots v0.15.4
 - Turing v0.24.0
 - Statistics
+
+
+You can configure this image on Devcontainer or run it on your local PC.
+
+## ghcr-hgf for Mac(Intel)
+
+```
+docker run -d --name notebook -v `pwd`:/home/jovyan/work -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ghcr.io/ykunisato/hgf:1.8.5 start-notebook.sh --NotebookApp.token="token that you set"
+```
+## ghcr-hgf for Mac(Apple Silicon)
+
+```
+docker run -d --name notebook -v `pwd`:/home/jovyan/work -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ghcr.io/ykunisato/hgf:1.8.5.arm start-notebook.sh --NotebookApp.token="token that you set"
+```
+
+
