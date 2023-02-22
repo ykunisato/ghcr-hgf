@@ -16,5 +16,5 @@ USER jovyan
 RUN julia -e 'ENV["PYTHON"] = raw"/usr/bin/python3";using Pkg;Pkg.update();Pkg.add(["IJulia","PyCall"]);Pkg.build(["IJulia","PyCall"]);'
 RUN julia -e 'using Pkg;Pkg.add(url="https://github.com/ilabcode/HierarchicalGaussianFiltering.jl")'
 RUN julia -e 'using Pkg;Pkg.add(url="https://github.com/ilabcode/ActionModels.jl")'
-RUN julia -e 'using Pkg;Pkg.add(["Turing","CSV","DataFrames","Plots", "StatsPlots", "LogExpFunctions", "Colors", "StatsModelComparisons", "Distributions","Statistics","RDatasets","ForneyLab","RxInfer","BenchmarkTools"]);Pkg.precompile()'
+RUN julia -e 'using Pkg;Pkg.add(["Turing","CSV","DataFrames","Plots", "ArviZ" ,"StatsPlots", "LogExpFunctions", "Colors", "StatsModelComparisons", "Distributions","Statistics","RDatasets","ForneyLab","RxInfer","BenchmarkTools"]);Pkg.precompile()'
 WORKDIR "${HOME}"
