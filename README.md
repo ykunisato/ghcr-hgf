@@ -28,15 +28,21 @@ The following Julia packages are installed in this image.
 
 You can configure this image on Devcontainer or run it on your local PC.
 
-## ghcr-hgf for Mac(Intel)
+## Mac(Intel)
 
 ```
 docker run -d --name notebook -v `pwd`:/home/jovyan/work -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ghcr.io/ykunisato/hgf:1.8.5 start-notebook.sh --NotebookApp.token="token that you set"
 ```
-## ghcr-hgf for Mac(Apple Silicon)
+## Mac(Apple Silicon)
 
 ```
 docker run -d --name notebook -v `pwd`:/home/jovyan/work -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ghcr.io/ykunisato/hgf:1.8.5.arm start-notebook.sh --NotebookApp.token="token that you set"
 ```
 
+## Windows
+```
+docker run -d --name notebook -v "%cd%":/home/jovyan/work -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes ghcr.io/ykunisato/hgf:1.8.5 start-notebook.sh --NotebookApp.token="token that you set"
+```
+
+Open the web browser and type "http://localhost:8888/" in the URL bar. You will see the JupyterLab on the web browser. Type JupyterLab in token that you set.
 
