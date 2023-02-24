@@ -6,12 +6,12 @@ The following Julia packages are installed in this image.
 
 
 - ActionModels v0.3.3 `https://github.com/ilabcode/ActionModels.jl#main`
-- ArviZ v0.8.1
+- ArviZ v0.8.2
 - BenchmarkTools v1.3.2
 - CSV v0.10.9
 - Colors v0.12.10
 - DataFrames v1.5.0
-- Distributions v0.25.81
+- Distributions v0.25.83
 - ForneyLab v0.12.0
 - HierarchicalGaussianFiltering v0.3.1 `https://github.com/ilabcode/HierarchicalGaussianFiltering.jl#main`
 - IJulia v1.24.0
@@ -22,6 +22,7 @@ The following Julia packages are installed in this image.
 - RxInfer v2.8.0
 - StatsModelComparisons v1.1.0
 - StatsPlots v0.15.4
+- Suppressor v0.2.1
 - Turing v0.24.0
 - Statistics
 
